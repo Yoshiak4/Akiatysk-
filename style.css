@@ -1,0 +1,117 @@
+public class ExplorandoUniverso {
+
+public static void main(String[] args) {
+
+createHeader();
+
+createNavigation();
+
+createImageSection();
+
+createContentSections();
+
+createContactInformation(); // Added method
+
+createFooter();
+
+}
+
+public static void createHeader() {
+
+    System.out.println("<header>");
+
+    System.out.println("<h1>Explorando o Universo</h1>");
+
+    System.out.println("</header>");
+
+}
+
+public static void createNavigation() {
+
+    System.out.println("<nav>");
+
+    System.out.println("<ul>");
+
+    System.out.println("<li><a href=\"#home\">Home</a></li>");
+
+    System.out.println("<li><a href=\"#black-holes\">Buracos Negros</a></li>");
+
+    System.out.println("<li><a href=\"#scientists\">Cientistas Famosos</a></li>");
+
+    System.out.println("<li><a href=\"#big-bang\">O Big Bang</a></li>");
+
+    System.out.println("<li><a href=\"#contact\">Contato</a></li>"); // Updated link
+
+    System.out.println("</ul>");
+
+    System.out.println("</nav>");
+
+}
+
+public static void createImageSection() {
+
+    System.out.println("<div id=\"image-container\">");
+
+    System.out.println("<img id=\"astronomy-image\" src=\"astronomy.jpg\" alt=\"Astronomy Image\">");
+
+    System.out.println("<div id=\"image-overlay\"></div>");
+
+    System.out.println("<div id=\"image-text\">Clique para ampliar</div>");
+
+    System.out.println("</div>");
+
+}
+
+public static void createContentSections() {
+
+    createSection("black-holes", "Buracos Negros", "<p>Buracos negros são regiões do espaço-tempo com uma gravidade extremamente forte, que nada pode escapar, nem mesmo a luz. Eles se formam quando estrelas massivas colapsam sob sua própria gravidade.</p><p>Os buracos negros têm um horizonte de eventos, que é uma fronteira a partir da qual nada pode voltar. Seu interior é uma singularidade, uma região de densidade infinita onde as leis da física conhecidas deixam de ser aplicáveis.</p><p>Os buracos negros têm um papel fundamental na evolução das galáxias, influenciando seu crescimento e a formação de estrelas. Os astrônomos estudam os efeitos gravitacionais dos buracos negros para compreender melhor essas estruturas misteriosas do universo.</p>");
+
+    createSection("scientists", "Cientistas Famosos", "<p>Astronomia é uma área que tem sido impulsionada por muitos cientistas notáveis ao longo dos séculos. Alguns dos cientistas famosos incluem:</p><ul><li>Nicolas Copérnico</li><li>Galileu Galilei</li><li>Isaac Newton</li><li>Albert Einstein</li><li>Edwin Hubble</li></ul><p>Esses cientistas fizeram contribuições significativas para nossa compreensão do cosmos e suas teorias revolucionaram a forma como vemos o universo.</p>");
+
+    createSection("big-bang", "O Big Bang", "<p>O Big Bang é a teoria científica que descreve a origem do universo. De acordo com essa teoria, o universo teve origem em um estado extremamente quente e denso há cerca de 13,8 bilhões de anos.</p><p>O Big Bang marcou o início da expansão do universo e desde então o universo tem continuado a se expandir. Essa teoria é apoiada por uma variedade de evidências observacionais, como a expansão do espaço, a radiação cósmica de fundo em micro-ondas e a abundância dos elementos químicos leves no universo.</p><p>Apesar de ser uma teoria amplamente aceita, ainda há muitas questões em aberto sobre os estágios iniciais do universo e o que aconteceu imediatamente após o Big Bang. Os cientistas continuam pesquisando e refinando essa teoria para melhor compreender os primórdios do nosso universo.</p>");
+
+}
+
+public static void createSection(String id, String title, String content) {
+
+    System.out.println("<section id=\"" + id + "\">");
+
+    System.out.println("<h2>" + title + "</h2>");
+
+    System.out.println(content);
+
+    System.out.println("</section>");
+
+}
+
+public static void createContactInformation() {
+
+    System.out.println("<section id=\"contact\">"); // Added section ID
+
+    System.out.println("<h2>Contato</h2>"); // Added section title
+
+    System.out.println("<p>Para mais informações, entre em contato conosco:</p>");
+
+    System.out.println("<ul>");
+
+    System.out.println("<li>Email: contato@explorandouniverso.com</li>");
+
+    System.out.println("<li>Telefone: +1234567890</li>");
+
+    System.out.println("<li><a href=\"https://www.instagram.com/explorandouniverso/\">Instagram</a></li>"); // Added Instagram link
+
+    System.out.println("</ul>");
+
+    System.out.println("</section>");
+
+}
+
+public static void createFooter() {
+
+    System.out.println("<footer>");
+
+    System.out.println("<p>&copy; 2023 Explorando o Universo. Todos os direitos reservados.</p>");
+
+    System.out.println("</footer>");
+
+  }
