@@ -1,2 +1,0 @@
-# Akiatysk-
-Slakajsns
